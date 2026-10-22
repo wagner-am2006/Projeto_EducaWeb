@@ -28,13 +28,13 @@ main {
 }
 
 /* ==========================================
-   CABEÇALHO E MENU DE NAVEGAÇÃO
+   CABEÇALHO E MENU DE NAVEGAÇÃO (Fundo Cinza Claro)
    ========================================== */
 .site-header {
-    background-color: #D3D3D3; /* Tom claro de alto contraste para destacar a logo */
-    color: white;
+    background-color: #f3f4f6; /* Fundo cinza claro */
+    color: #1f2937;            /* Texto escuro para contrastar com o cinza */
     padding: 12px 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .nav-container {
@@ -52,8 +52,8 @@ main {
 }
 
 .img-logo {
-    height: 50px; /* Tamanho aumentado para perfeita legibilidade */
-    width: auto;  /* Mantém a proporção exata para não distorcer */
+    height: 50px; /* Mantém o tamanho legível */
+    width: auto;  
     display: block;
     object-fit: contain;
 }
@@ -66,8 +66,9 @@ main {
     flex-wrap: wrap;
 }
 
+/* Links do menu ajustados para fundo claro */
 .nav-links a {
-    color: white;
+    color: #1f2937; /* Cor escura nos links */
     text-decoration: none;
     font-weight: 500;
     padding: 8px 12px;
@@ -77,17 +78,17 @@ main {
 
 .nav-links a:hover,
 .nav-links a.active {
-    background-color: #1e3a8a;
-    color: #60a5fa;
+    background-color: #e2e8f0;
+    color: #2563eb;
 }
 
 .btn-login {
-    background-color: #2563eb;
-    border-radius: 4px;
+    background-color: #2563eb !important; /* Mantém o botão de login destacado em azul */
+    color: white !important;
 }
 
 .btn-login:hover {
-    background-color: #1d4ed8;
+    background-color: #1d4ed8 !important;
 }
 
 /* ==========================================
