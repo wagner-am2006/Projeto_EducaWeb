@@ -31,7 +31,7 @@ main {
    CABEÇALHO E MENU DE NAVEGAÇÃO
    ========================================== */
 .site-header {
-    background-color: #0d1b2a; /* Tom escuro de alto contraste para destacar a logo */
+    background-color: #D3D3D3; /* Tom claro de alto contraste para destacar a logo */
     color: white;
     padding: 12px 0;
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
