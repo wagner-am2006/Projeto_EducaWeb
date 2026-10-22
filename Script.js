@@ -26,10 +26,25 @@ document.addEventListener("DOMContentLoaded", function () {
                 return;
             }
 
-            let bloco1 = Math.round(horas * 0.5);
-            let bloco2 = Math.round(horas * 0.3);
-            let bloco3 = horas - bloco1 - bloco2;
-            if (bloco3 < 1) bloco3 = 1;
+            let bloco1, bloco2, bloco3;
+
+            if (horas <= 1) {
+                bloco1 = 1; bloco2 = 0; bloco3 = 0;
+            } else if (horas === 2) {
+                bloco1 = 1; bloco2 = 1; bloco3 = 0;
+            } else if (horas === 3) {
+                bloco1 = 1; bloco2 = 1; bloco3 = 1;
+            } else if (horas === 4) {
+                bloco1 = 2; bloco2 = 1; bloco3 = 1;
+            } else if (horas === 5) {
+                bloco1 = 2; bloco2 = 2; bloco3 = 1;
+            } else if (horas === 6) {
+                bloco1 = 3; bloco2 = 2; bloco3 = 1;
+            } else {
+                bloco1 = Math.round(horas * 0.5);
+                bloco2 = Math.round(horas * 0.3);
+                bloco3 = horas - bloco1 - bloco2;
+            }
 
             divResultado.innerHTML = `
                 <div style="background: #f8fafc; padding: 15px; border-radius: 8px; border: 1px solid #2563eb; margin-top: 15px; text-align: left;">
