@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprend.IA - Plataforma de Aprendizado com Inteligência Artificial</title>
+    <!-- Link para o CSS-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO E MENU DE NAVEGAÇÃO (6 PÁGINAS) -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo-marca">
+                <!--colocar a imagem do logo depois-->
+                <span>APREND.IA</span>
+            </a>
+            
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Início</a></li>
+                    <li><a href="Cursos.html">Cursos</a></li>
+                    <li><a href="Mapa.html">Mapa</a></li>
+                    <li><a href="Sobre.html">Sobre</a></li>
+                    <li><a href="Contato.html">Contato</a></li>
+                    <li><a href="Login.html" class="btn-login">Login / Entrar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL (HOME) -->
+    <main>
+        <!-- SEÇÃO HERO / BANNER PRINCIPAL -->
+        <section class="hero">
+            <div class="container hero-content">
+                <span class="badge-ia">Powered by IA</span>
+                <h1>Acelere seus estudos com o poder da Inteligência Artificial</h1>
+                <p>Organize sua rotina, crie cronogramas personalizados e aprenda de forma muito mais inteligente e eficiente com a <strong>Aprend.IA</strong>.</p>
+                <div class="hero-buttons">
+                    <a href="Cursos.html" class="btn btn-primary">Explorar Cursos</a>
+                    <a href="Login.html" class="btn btn-secondary">Começar Gratuitamente</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE RECURSOS / DIFERENCIAIS DA IA -->
+        <section class="features container">
+            <h2>Como a Aprend.IA transforma seus estudos</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>Cronograma Inteligente</h3>
+                    <p>A IA analisa sua disponibilidade de tempo e gera um plano de estudos otimizado sob medida para você.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Tutor Virtual 24/7</h3>
+                    <p>Tire dúvidas complexas a qualquer momento com explicações adaptadas ao seu nível de aprendizado.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Resumos Automáticos</h3>
+                    <p>Transforme artigos longos, PDFs e apostilas em tópicos diretos e fáceis de memorizar.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MINI SIMULADOR / WIDGET DE IA (Preparado para o Script.js) -->
+        <section class="ai-simulator-section">
+            <div class="container simulator-box">
+                <h2>Experimente o Organizador Rápido</h2>
+                <p>Digite quantas horas você tem livres hoje para estudar:</p>
+                <div class="simulator-form">
+                    <input type="number" id="horasEstudo" placeholder="Ex: 3" min="1" max="12">
+                    <button id="btnGerarPlano" class="btn btn-primary">Gerar Sugestão de Estudo</button>
+                </div>
+                <div id="resultadoPlano" class="resultado-plano">
+                    <!-- O JavaScript vai injetar o resultado aqui-->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Aprend.IA - Desde 2026. Todos os direitos reservados.</p>
+            <p>Trabalho Acadêmico - Desenvolvimento Front-End</p>
+        </div>
+    </footer>
+
+    <!-- Link para o JavaScript -->
+    <script src="Script.js"></script>
+</body>
+</html>

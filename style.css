@@ -1,0 +1,420 @@
+/* ==========================================
+   CONFIGURAÇÕES GERAIS E RESET
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ==========================================
+   CABEÇALHO E MENU DE NAVEGAÇÃO
+   ========================================== */
+.site-header {
+    background-color: #172554;
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo-marca {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background-color: #1e3a8a;
+    color: #60a5fa;
+}
+
+.btn-login {
+    background-color: #2563eb;
+    border-radius: 4px;
+}
+
+.btn-login:hover {
+    background-color: #1d4ed8;
+}
+
+/* ==========================================
+   SEÇÃO HERO (INDEX)
+   ========================================== */
+.hero {
+    background: linear-gradient(135deg, #1e3a8a, #172554);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.badge-ia {
+    background-color: #2563eb;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto 25px auto;
+    color: #e2e8f0;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* ==========================================
+   BOTÕES E COMPONENTES GERAIS
+   ========================================== */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #2563eb;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-secondary {
+    background-color: white;
+    color: #172554;
+}
+
+.btn-secondary:hover {
+    background-color: #f8fafc;
+}
+
+.btn-block {
+    width: 100%;
+}
+
+/* ==========================================
+   RECURSOS, CARDS E GRIDS (INDEX / CURSOS / MAPA / SOBRE)
+   ========================================== */
+.features, .courses-section, .contact-section, .ai-simulator-section, .page-header, .map-section, .about-content {
+    padding: 40px 0;
+}
+
+.features h2, .page-header h1 {
+    text-align: center;
+    color: #1e3a8a;
+    margin-bottom: 15px;
+}
+
+.page-header p {
+    text-align: center;
+    color: #555;
+    font-size: 16px;
+}
+
+.feature-grid, .course-grid, .map-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.feature-card, .map-card, .about-card, .contact-info, .contact-form-box, .login-box {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border-left: 4px solid #2563eb;
+}
+
+.feature-card h3, .map-card h2, .about-card h2, .contact-info h2, .contact-form-box h2, .login-box h2 {
+    color: #1e3a8a;
+    margin-bottom: 15px;
+}
+
+.map-card ul, .about-card p, .map-card p {
+    color: #4b5563;
+}
+
+.map-card ul {
+    padding-left: 20px;
+}
+
+.map-card li {
+    margin-bottom: 8px;
+}
+
+.map-card a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.map-card a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo específico para Cards de Cursos */
+.course-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border-top: 4px solid #2563eb;
+    display: flex;
+    flex-direction: column;
+}
+
+.course-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.course-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.course-info h3 {
+    color: #1e3a8a;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.course-info p {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+/* ==========================================
+   SIMULADOR DE IA (INDEX)
+   ========================================== */
+.ai-simulator-section {
+    background-color: #e2e8f0;
+    padding: 50px 0;
+}
+
+.simulator-box {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.simulator-box h2 {
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+.simulator-form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.simulator-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 140px;
+    font-size: 16px;
+}
+
+.resultado-plano {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+/* ==========================================
+   CONTATO, LOGIN E CADASTRO (FORMULÁRIOS)
+   ========================================== */
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+@media (max-width: 768px) {
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+fieldset {
+    border: 1px solid #cbd5e1;
+    padding: 20px;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+legend {
+    font-weight: bold;
+    color: #1e3a8a;
+    padding: 0 10px;
+}
+
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 450px;
+}
+
+.login-box p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.login-links {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.login-links a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.login-links a:hover {
+    text-decoration: underline;
+}
+
+/* ==========================================
+   RODAPÉ
+   ========================================== */
+.site-footer {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: auto;
+}
+
+.footer-content p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #cbd5e1;
+}
+
+/* ==========================================
+   RESPONSIVIDADE GERAL (@MEDIA QUERIES)
+   ========================================== */
+@media (max-width: 600px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links {
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Entrar - Aprend.IA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo-marca">
+                <span>APREND.IA</span>
+            </a>
+            
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="Cursos.html">Cursos</a></li>
+                    <li><a href="Mapa.html">Mapa</a></li>
+                    <li><a href="Sobre.html">Sobre</a></li>
+                    <li><a href="Contato.html">Contato</a></li>
+                    <li><a href="Login.html" class="btn-login active">Login / Entrar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="login-section container">
+            <div class="login-box">
+                <h2>Acesse sua Conta</h2>
+                <p>Efetue login para gerenciar seus cronogramas e acessar os cursos.</p>
+                
+                <form id="formLogin">
+                    <fieldset>
+                        <legend>Credenciais de Acesso</legend>
+                        
+                        <div class="form-group">
+                            <label for="emailLogin">E-mail:</label>
+                            <input type="email" id="emailLogin" name="email" required placeholder="seu.email@exemplo.com" autofocus>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="senhaLogin">Senha:</label>
+                            <input type="password" id="senhaLogin" name="senha" required placeholder="****">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">Entrar na Plataforma</button>
+                    </fieldset>
+                </form>
+
+                <div class="login-links">
+                    <p>Ainda não possui uma conta? <a href="Cadastro.html">Criar conta</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Aprend.IA - Todos os direitos reservados.</p>
+            <p>Trabalho Acadêmico - Desenvolvimento Front-End</p>
+        </div>
+    </footer>
+
+    <script src="Script.js"></script>
+</body>
+</html>
