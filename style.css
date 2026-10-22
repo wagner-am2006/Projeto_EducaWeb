@@ -31,10 +31,10 @@ main {
    CABEÇALHO E MENU DE NAVEGAÇÃO
    ========================================== */
 .site-header {
-    background-color: #172554;
+    background-color: #0d1b2a; /* Tom escuro de alto contraste para destacar a logo */
     color: white;
-    padding: 15px 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 12px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
 .nav-container {
@@ -44,12 +44,18 @@ main {
     flex-wrap: wrap;
 }
 
+/* Ajustes da Logomarca */
 .logo-marca {
-    color: white;
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    font-size: 24px;
-    font-weight: bold;
-    letter-spacing: 1px;
+}
+
+.img-logo {
+    height: 50px; /* Tamanho aumentado para perfeita legibilidade */
+    width: auto;  /* Mantém a proporção exata para não distorcer */
+    display: block;
+    object-fit: contain;
 }
 
 .nav-links {
@@ -323,113 +329,3 @@ main {
 }
 
 .form-group label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #333;
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
-}
-
-fieldset {
-    border: 1px solid #cbd5e1;
-    padding: 20px;
-    border-radius: 6px;
-    background-color: #fff;
-}
-
-legend {
-    font-weight: bold;
-    color: #1e3a8a;
-    padding: 0 10px;
-}
-
-.login-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 60px 20px;
-}
-
-.login-box {
-    width: 100%;
-    max-width: 450px;
-}
-
-.login-box p {
-    color: #666;
-    font-size: 14px;
-    margin-bottom: 20px;
-}
-
-.login-links {
-    margin-top: 15px;
-    text-align: center;
-}
-
-.login-links a {
-    color: #2563eb;
-    text-decoration: none;
-}
-
-.login-links a:hover {
-    text-decoration: underline;
-}
-
-/* ==========================================
-   RODAPÉ
-   ========================================== */
-.site-footer {
-    background-color: #172554;
-    color: white;
-    text-align: center;
-    padding: 25px 0;
-    margin-top: auto;
-}
-
-.footer-content p {
-    font-size: 14px;
-    margin-bottom: 5px;
-    color: #cbd5e1;
-}
-
-/* ==========================================
-   RESPONSIVIDADE GERAL (@MEDIA QUERIES)
-   ========================================== */
-@media (max-width: 600px) {
-    .nav-container {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .nav-links {
-        justify-content: center;
-    }
-
-    .hero h1 {
-        font-size: 28px;
-    }
-}
-
-/* ==========================================
-   AJUSTE DA LOGOMARCA NO CABEÇALHO
-   ========================================== */
-.logo-marca {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-}
-
-.img-logo {
-    height: 45px; /* Altura controlada para não estourar o cabeçalho */
-    width: auto;  /* Mantém a proporção exata para não perder qualidade */
-    display: block;
-}
