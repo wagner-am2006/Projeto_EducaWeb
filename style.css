@@ -420,15 +420,16 @@ legend {
 }
 
 /* ==========================================
-   AJUSTE DA LOGOMARCA
+   AJUSTE DA LOGOMARCA NO CABEÇALHO
    ========================================== */
 .logo-marca {
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 .img-logo {
-    height: 40px; /* Ajuste esta altura conforme o tamanho ideal da sua logo */
-    width: auto;  /* Mantém a proporção original da imagem */
+    height: 35px; /* Altura controlada para não estourar o cabeçalho */
+    width: auto;  /* Mantém a proporção exata para não perder qualidade */
     display: block;
 }
