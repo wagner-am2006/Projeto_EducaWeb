@@ -418,3 +418,17 @@ legend {
         font-size: 28px;
     }
 }
+
+/* ==========================================
+   AJUSTE DA LOGOMARCA
+   ========================================== */
+.logo-marca {
+    display: flex;
+    align-items: center;
+}
+
+.img-logo {
+    height: 40px; /* Ajuste esta altura conforme o tamanho ideal da sua logo */
+    width: auto;  /* Mantém a proporção original da imagem */
+    display: block;
+}
