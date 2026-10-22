@@ -429,7 +429,7 @@ legend {
 }
 
 .img-logo {
-    height: 35px; /* Altura controlada para não estourar o cabeçalho */
+    height: 45px; /* Altura controlada para não estourar o cabeçalho */
     width: auto;  /* Mantém a proporção exata para não perder qualidade */
     display: block;
 }
