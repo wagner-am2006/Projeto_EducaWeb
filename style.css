@@ -1,5 +1,5 @@
 /* ==========================================
-   CONFIGURAÇÕES GERAIS E RESET
+   CONFIGURAÇÕES GERAIS
    ========================================== */
 * {
     margin: 0;
@@ -28,11 +28,11 @@ main {
 }
 
 /* ==========================================
-   CABEÇALHO E MENU DE NAVEGAÇÃO (Fundo Cinza Claro)
+   CABEÇALHO E MENU DE NAVEGAÇÃO
    ========================================== */
 .site-header {
-    background-color: #f3f4f6; /* Fundo cinza claro */
-    color: #1f2937;            /* Texto escuro para contrastar com o cinza */
+    background-color: #f3f4f6; 
+    color: #1f2937;       
     padding: 12px 0;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
@@ -44,7 +44,7 @@ main {
     flex-wrap: wrap;
 }
 
-/* Ajustes da Logomarca */
+
 .logo-marca {
     display: flex;
     align-items: center;
@@ -52,7 +52,7 @@ main {
 }
 
 .img-logo {
-    height: 50px; /* Mantém o tamanho legível */
+    height: 50px; 
     width: auto;  
     display: block;
     object-fit: contain;
@@ -66,9 +66,9 @@ main {
     flex-wrap: wrap;
 }
 
-/* Links do menu ajustados para fundo claro */
+
 .nav-links a {
-    color: #1f2937; /* Cor escura nos links */
+    color: #1f2937; 
     text-decoration: none;
     font-weight: 500;
     padding: 8px 12px;
@@ -83,7 +83,7 @@ main {
 }
 
 .btn-login {
-    background-color: #2563eb !important; /* Mantém o botão de login destacado em azul */
+    background-color: #2563eb !important;
     color: white !important;
 }
 
@@ -133,7 +133,7 @@ main {
 }
 
 /* ==========================================
-   BOTÕES E COMPONENTES GERAIS
+   BOTÕES
    ========================================== */
 .btn {
     display: inline-block;
@@ -170,7 +170,7 @@ main {
 }
 
 /* ==========================================
-   RECURSOS, CARDS E GRIDS (INDEX / CURSOS / MAPA / SOBRE)
+  (INDEX / CURSOS / MAPA / SOBRE)
    ========================================== */
 .features, .courses-section, .contact-section, .ai-simulator-section, .page-header, .map-section, .about-content {
     padding: 40px 0;
