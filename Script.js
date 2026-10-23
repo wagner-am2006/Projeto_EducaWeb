@@ -1,13 +1,5 @@
-/* ==================================================
-   SCRIPT.JS - Plataforma Aprend.IA
-   Desenvolvimento Front-End - Universidade Cruzeiro do Sul
-   ================================================== */
-
 document.addEventListener("DOMContentLoaded", function () {
 
-    /* --------------------------------------------------
-       1. LÓGICA DO MINI SIMULADOR DE ESTUDOS (index.html)
-       -------------------------------------------------- */
     const btnGerarPlano = document.getElementById("btnGerarPlano");
     const inputHoras = document.getElementById("horasEstudo");
     const divResultado = document.getElementById("resultadoPlano");
@@ -60,9 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    /* --------------------------------------------------
-       2. VALIDAÇÃO DO FORMULÁRIO DE CONTATO (Contato.html)
-       -------------------------------------------------- */
+
     const formContato = document.getElementById("formContato");
 
     if (formContato) {
@@ -82,9 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    /* --------------------------------------------------
-       3. LÓGICA DE LOGIN (Login.html)
-       -------------------------------------------------- */
+
     const formLogin = document.getElementById("formLogin");
 
     if (formLogin) {
@@ -99,9 +87,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    /* --------------------------------------------------
-       4. LÓGICA DE CADASTRO (Cadastro.html)
-       -------------------------------------------------- */
     const formCadastro = document.getElementById("formCadastro");
 
     if (formCadastro) {
@@ -110,7 +95,6 @@ document.addEventListener("DOMContentLoaded", function () {
             const nomeCadastro = document.getElementById("nomeCadastro").value;
             const senhaCadastro = document.getElementById("senhaCadastro").value;
 
-            // Validação simples de segurança alinhada ao pattern do HTML
             const regexSenha = /(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]).{8,}/;
 
             if (!regexSenha.test(senhaCadastro)) {
@@ -119,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             alert(`Parabéns, ${nomeCadastro}! Sua conta na Aprend.IA foi criada com sucesso. Faça seu login para continuar.`);
-            window.location.href = "Login.html"; // Redireciona para a tela de login
+            window.location.href = "Login.html";
         });
     }
 
